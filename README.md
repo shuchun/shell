@@ -5,6 +5,7 @@
 
 # 使用    
 **autoCpTFS**    
+
 ------ | ---------- | ------------- | ----------------------    
  命令  |   参数     |   说明        | 示例     
  status | -l <limitNum>  |  查看tfs块的文件占用情况，limitNum 指定删除文件占用数量过滤条件  |  sh ./autoCpTFS.sh status 或者 sh ./autoCpTFS.sh status -l 500 (删除文件>= 500个的block)     
