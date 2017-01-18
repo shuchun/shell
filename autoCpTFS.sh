@@ -5,7 +5,7 @@
 # ------------------------------------
 
 tfsBase=/u03/taobao/tfs_2.2.16/
-tfsNSIp=172.16.2.112
+tfsNSIp=127.0.0.1
 tfsPort=10001
 
 #help info
