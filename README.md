@@ -47,8 +47,8 @@ help     |              |   帮助              |   ```sh autoSyncFile.sh  help`
 **downloadFile**
 
 > 首先需要准备一个文件用于提供批量下载tfs文件的列表和对应的tfs文件下载到本地的文件名，中间用','号分隔
-格式如下：
-下载到本地的文件名 ,  tfs服务器上的文件名
+格式如下： 
+下载到本地的文件名 ,  tfs服务器上的文件名    
 342422199602103914,T1EcKTBCLv1RXrhCrK.jpg
 
 
