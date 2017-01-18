@@ -6,10 +6,12 @@ tfsPort=10001
 
 localFileDir=/var/tfsSync/
 downLogDir=/var/tfsSync/log/
+
+tfsNameFile=/var/tfs/tfs.txt
 #-- download fileName -+----- tfs fileName ----|
 #342422199602103914,T1EcKTBCLv1RXrhCrK.jpg
 
-for file in $(cat /var/tfs/tfs.txt);do
+for file in $(cat ${tfsNameFile});do
   #echo ${file}
   arr[0]=`echo ${file} | cut -d "," -f2`
   arr[1]=`echo ${file} | cut -d "," -f1`
