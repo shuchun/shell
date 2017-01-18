@@ -17,7 +17,7 @@ function helpInfo(){
 function getTfsBlockInfo(){
 
 	echo '导出tfs block信息'
-	$tfsBase/bin/ssm -s $tfsNSIp:$tfsPort -i 'block ' > /tmp/block.txt
+	${tfsBase}/bin/ssm -s ${tfsNSIp}:${tfsPort} -i 'block ' > /tmp/block.txt
 }
 
 #filter blockid
