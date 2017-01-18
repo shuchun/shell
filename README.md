@@ -1,9 +1,14 @@
 # [shell](https://github.com/shuchun/shell)   
 
+
+> 注意：使用前需要根据自己的tfs服务器部署与配置修改脚本的tfs目录位置以及NS的ip与端口    
+命令参数间无先后顺序 
+
 # 说明    
 * autoCpTFS.sh   压缩淘宝tfs块空间脚本   
 * autoSyncBlk.sh	tfs迁移脚本按块迁移     
 * autoSyncFile.sh	tfs迁移脚本按文件迁移    
+* downloadFile.sh   批量下载tfs文件到本地
 
 # 使用    
 **autoCpTFS**    
@@ -38,10 +43,18 @@ bakFile      |  无          |    开始迁移      |   ```sh ./autoSyncFile.sh 
 help     |              |   帮助              |   ```sh autoSyncFile.sh  help```   
 
 
+---------------------------------    
+**downloadFile**
+
+> 首先需要准备一个文件用于提供批量下载tfs文件的列表和对应的tfs文件下载到本地的文件名，中间用','号分隔
+格式如下：
+下载到本地的文件名 ,  tfs服务器上的文件名
+342422199602103914,T1EcKTBCLv1RXrhCrK.jpg
 
 
 
 
-> 注意：使用前需要根据自己的tfs服务器部署与配置修改脚本的tfs目录位置以及NS的ip与端口    
-命令参数间无先后顺序         
+
+
+        
 
