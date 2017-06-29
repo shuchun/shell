@@ -74,10 +74,12 @@ help     |              |   帮助              |   ```sh autoSyncFile.sh  help`
 >eg:   
 sh ./AB-TestAuto.sh -n 1000 -c 100 -w 20 -s 10 -o c -t github-index -u http://github.com/ -f github-index.png -C test=test -g  
 ab测试http://github.com/路径(-u)，指定100个并发(-c)，总请求1000次(-n)，请求时设置cookie(-C)，
-ab测试重复执行20次(-w)，每次并发数(-o c)增加10个(-s)，ab测试结束后回执图表(-g),
+ab测试重复执行20次(-w)，每次并发数(-o c)增加10个(-s)，ab测试结束后绘制图表(-g),
 图表标题(-t)为github-index，生成的图表文件(-f)为github-index.png     
+
+
 sh ./AB-TestAuto.sh -t github-index_100_1000 -f github-index.png -i ab_1000_100.dat  -g   
-使用ab测试数据文件ab_1000_100.dat(-i)做为GnuPlot的数据文件回执图表(-g),
+使用ab测试数据文件ab_1000_100.dat(-i)做为GnuPlot的数据文件绘制图表(-g),
 图表的标题(-t)为github-index,图表文件(-f)为github-index.png
 
 
