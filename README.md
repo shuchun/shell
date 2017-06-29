@@ -54,6 +54,8 @@ help     |              |   帮助              |   ```sh autoSyncFile.sh  help`
 
 
 **AB-TestAuto.sh**    
+
+
  命令    |     参数     |     说明        |    示例     
 ------   |   ----------   |   -------------   |   ----------------------  
 -f | -f output.png  |  生成的GnuPlot图表文件名称  |  ```sh ./AB-TestAuto.sh -f output.png```     
