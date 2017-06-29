@@ -64,14 +64,14 @@ help     |              |   帮助              |   ```sh autoSyncFile.sh  help`
 -n   |  -n num  |  ab测试总请求数,默认100   | ```sh ./AB-TestAuto.sh -n 100```   
 -t   |  -t title  |  gnuplot生成图表文件的标题   | ```sh ./AB-TestAuto.sh -t title```   
 -s   |  -s stepNum  |  ab测试多次循环每次增加量   | ```sh ./AB-TestAuto.sh -s 100```   
--o   |  -o option  |  配置ab测试多次循环每次增加并发还是总请求数，a|n|c   | ```sh ./AB-TestAuto.sh -o a```   
+-o   |  -o option  |  配置ab测试多次循环每次增加并发还是总请求数，a、n、c   | ```sh ./AB-TestAuto.sh -o a```   
 -w   |  -w loopNum  |  ab测试循环次数   | ```sh ./AB-TestAuto.sh -w 3```   
 -u   |  -u url  |  ab测试链接路径   | ```sh ./AB-TestAuto.sh -u http://github.com/```   
 -p   |  -p postParamFile  |  ab测试post提交的参数文件   | ```sh ./AB-TestAuto.sh -p post.txt```   
 -g   |  -g  |  ab测试结束是否使用GnuPlot回执图表   | ```sh ./AB-TestAuto.sh -g```   
 -i   |  -i  |  GnuPlot指定ab测试数据文件做为数据文件回执图表   | ```sh ./AB-TestAuto.sh -i test.dat```   
 
->eg:
+>eg:   
 sh ./AB-TestAuto.sh -n 1000 -c 100 -w 20 -s 10 -o c -t github-index -u http://github.com/ -f github-index.png -C test=test -g  
 ab测试http://github.com/路径(-u)，指定100个并发(-c)，总请求1000次(-n)，请求时设置cookie(-C)，
 ab测试重复执行20次(-w)，每次并发数(-o c)增加10个(-s)，ab测试结束后回执图表(-g),
